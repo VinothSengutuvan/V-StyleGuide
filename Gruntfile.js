@@ -8,7 +8,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: ['js/action.js',
+        src: [
+             // 'js/action.js',
              'js/tooltip.js',
              'js/datepicker.min.js',
              'js/slimscroll.min.js',
@@ -23,6 +24,7 @@ module.exports = function(grunt) {
           report:'min'
         },
         src: [
+              'css/font-awesome.min.css',
               'css/datepicker.min.css',
               'css/hint.css',
               'css/main.css',

@@ -30,6 +30,8 @@ $(function() {
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
+
+
     // tooltip for focuse code here
     $(function() {
 
@@ -39,7 +41,6 @@ $( document ).ready(function() {
         $('.tooltip_w').tipsy({trigger: 'focus', gravity: 'w',fade:true});
 
      });
-
 
 
 
@@ -66,7 +67,12 @@ $( document ).ready(function() {
     //SELECT OPTIONS AND HIDE OPTION AFTER SELECTION
     $(".csDropdown ul li a").click(function() {
         var text = $(this).html();
-         $(".csDropdown .selected").html(text);
+         // $(".csDropdown .selected").html(text);
+
+         $(this).parent().parent().parent().find("a.selected").html(text);
+
+
+        // $(this).parent(".csDropdown").find("a.selected").text());
         // $(this).find('a').addClass('active');
         // $(this).siblings().find('a').removeClass('active');
        
@@ -88,18 +94,18 @@ $( document ).ready(function() {
 
 
 // datepicker language set code here 
-;(function ($) { $.fn.datepicker.language['en'] = {
-    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-    months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
-    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    today: 'Today',
-    clear: 'Clear',
-    dateFormat: 'mm/dd/yyyy',
-    timeFormat: 'hh:ii aa',
-    firstDay: 0
-}; })(jQuery);
+// ;(function ($) { $.fn.datepicker.language['en'] = {
+//     days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+//     daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+//     daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+//     months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
+//     monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+//     today: 'Today',
+//     clear: 'Clear',
+//     dateFormat: 'mm/dd/yyyy',
+//     timeFormat: 'hh:ii aa',
+//     firstDay: 0
+// }; })(jQuery);
 
 
 
