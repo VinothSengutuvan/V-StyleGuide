@@ -1,7 +1,7 @@
  // accordian menu action code here 
 $(function() {
     var Accordion = function(el, multiple) {
-        console.log('test log');
+        // console.log('test log');
         this.el = el || {};
         this.multiple = multiple || false;
 
